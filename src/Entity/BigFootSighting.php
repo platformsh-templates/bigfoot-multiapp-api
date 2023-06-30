@@ -72,7 +72,8 @@ class BigFootSighting
      */
     #[ORM\OneToMany(targetEntity: Comment::class, mappedBy: "bigFootSighting")]
     #[ORM\OrderBy(['createdAt' => 'DESC'])]
-    #[Groups(['sighting:item'])]
+    #[Groups(['sighting:list', 'sighting:item'])]
+//    #[Groups(['sighting:item'])]
     private Collection $comments;
 
     #[ORM\Column(type: 'integer')]
