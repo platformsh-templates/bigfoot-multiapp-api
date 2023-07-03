@@ -65,8 +65,8 @@ mounts:
 # The configuration of app when it is exposed to the web.
 web:
   locations:
-    "/api":
-      passthru: "/api/index.php"
+    "/":
+      passthru: "/index.php"
       root: "public"
       index:
         - index.php
