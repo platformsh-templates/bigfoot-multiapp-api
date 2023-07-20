@@ -1,7 +1,6 @@
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
 
-
 # set APP_ENV to prod
 export APP_ENV=prod
 
