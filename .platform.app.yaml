@@ -99,7 +99,8 @@ source:
     rebuild:
       command: |
         set -e
-        
+        echo "before submodule update"
         git submodule update --remote --checkout
+        echo "after submodule update"
         git add admin api gatsby mercure
         git commit -m "Updating submodules admin, api, gatsby and mercure"  
